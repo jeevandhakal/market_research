@@ -1,0 +1,25 @@
+research_task:
+  description: >
+    Conduct a comprehensive online search for information about the company with domain: {company_domain}.
+    Gather the following specific information:
+    1. Company Overview (Mission, Vision, Founding details).
+    2. Key Products and Services.
+    3. Target Market and Customer Base.
+    4. Recent News and Developments (last 6-12 months).
+    5. Key Competitors and their market positioning.
+    Ensure the information is accurate and up-to-date.
+  expected_output: >
+    A structured research document containing detailed findings on Company Overview, Products/Services, Target Market, Recent News, and Competitors for {company_domain}.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Review the research findings for {company_domain} and compile a strategic market research report.
+    The report MUST include the following sections:
+    1. Executive Summary: A high-level overview of the company and key findings.
+    2. SWOT Analysis: Strengths, Weaknesses, Opportunities, and Threats based on the research.
+    3. Strategic Recommendations: Actionable advice for the company based on the analysis.
+    The report should be professional, well-formatted in Markdown.
+  expected_output: >
+    A Markdown file named 'report.md' (or similar, handled by the code) containing the Executive Summary, SWOT Analysis, and Strategic Recommendations.
+  agent: reporting_analyst
