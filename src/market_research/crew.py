@@ -8,7 +8,7 @@ from typing import List
 # Added requests_per_minute to handle the 'wait' automatically
 llm = LLM(
     model="gemini/gemini-2.5-flash",
-    temperature=0.7,
+    temperature=0.1,
     requests_per_minute=10, 
 )
 
